@@ -12,3 +12,7 @@ Currently, two official plugins are available:
 1. 按照 `https://www.retroui.dev/docs/install/vite` 所示步骤，创建一个实例项目，需要有路由，首页放一个按钮，点击跳转到详情页，详情页有Avatar和Card组件
 
 2. 运行有报错，请检查
+
+经过这2个步骤，项目即可正常运行，访问地址为 `https://react-neo-one.vercel.app/`
+
+3. 安装 `https://www.retroui.dev/docs/components/drawer` 组件，详情页点击头像出现左侧drawer，内容为test即可

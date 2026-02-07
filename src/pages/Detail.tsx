@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { Avatar } from '@/components/retroui/Avatar'
 import { Card } from '@/components/retroui/Card'
 import { Button } from '@/components/retroui/Button'
+import { Drawer } from '@/components/retroui/Drawer'
 
 const Detail = () => {
   const navigate = useNavigate()
@@ -12,9 +13,18 @@ const Detail = () => {
       <div className="space-y-8 max-w-md w-full">
         <Card className="p-6 border-2">
           <div className="flex flex-col items-center space-y-4">
-            <Avatar className="w-32 h-32 border-2">
-              <Avatar.Image src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=friendly%20retro%20style%20avatar%20illustration&image_size=square" alt="用户头像" />
-            </Avatar>
+            <Drawer direction="left">
+              <Drawer.Trigger asChild>
+                <Avatar className="w-32 h-32 border-2 cursor-pointer">
+                  <Avatar.Image src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=friendly%20retro%20style%20avatar%20illustration&image_size=square" alt="用户头像" />
+                </Avatar>
+              </Drawer.Trigger>
+              <Drawer.Content className="p-6">
+                <div className="h-full flex items-center justify-center">
+                  <p className="text-2xl font-bold">test</p>
+                </div>
+              </Drawer.Content>
+            </Drawer>
             <h2 className="text-2xl font-bold font-[var(--font-head)]">用户信息</h2>
             <p className="text-center">这是一个使用 RetroUI 组件的详情页示例。</p>
           </div>
