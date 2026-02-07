@@ -9,6 +9,6 @@ Currently, two official plugins are available:
 
 ## 此项目使用Trae SOLO生成，文字指令步骤如下
 
-1. 按照 `https://www.retroui.dev/docs/install/vite` 所示步骤，创建一个实例项目，注意使用pnpm，然后需要有路由，首页放一个按钮，点击跳转到详情页，详情页有Avatar和Card组件
+1. 按照 `https://www.retroui.dev/docs/install/vite` 所示步骤，创建一个实例项目，需要有路由，首页放一个按钮，点击跳转到详情页，详情页有Avatar和Card组件
 
 2. 运行有报错，请检查
