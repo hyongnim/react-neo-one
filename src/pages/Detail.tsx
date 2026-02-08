@@ -10,7 +10,7 @@ const Detail = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4">
       <h1 className="text-4xl font-bold mb-8 font-[var(--font-head)]">详情页</h1>
-      <div className="space-y-8 max-w-md w-full">
+      <div className="space-y-8 max-w-md mx-auto">
         <Card className="p-6 border-2">
           <div className="flex flex-col items-center space-y-4">
             <Drawer direction="left">
