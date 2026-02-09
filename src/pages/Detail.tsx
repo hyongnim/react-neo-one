@@ -21,6 +21,10 @@ const Detail = () => {
                 </Avatar>
               </Drawer.Trigger>
               <Drawer.Content className="p-6">
+                <Drawer.Header>
+                    <Drawer.Title>Are you absolutely sure?</Drawer.Title>
+                    <Drawer.Description>This action cannot be undone.</Drawer.Description>
+                </Drawer.Header>
                 <div className="h-full flex items-center justify-center">
                   <p className="text-2xl font-bold">test</p>
                 </div>
