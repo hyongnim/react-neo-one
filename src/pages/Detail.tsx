@@ -3,6 +3,7 @@ import { Avatar } from '@/components/retroui/Avatar'
 import { Card } from '@/components/retroui/Card'
 import { Button } from '@/components/retroui/Button'
 import { Drawer } from '@/components/retroui/Drawer'
+import { ThemeSelect } from '@/components/common/ThemeSelect'
 
 const Detail = () => {
   const navigate = useNavigate()
@@ -32,6 +33,9 @@ const Detail = () => {
         <Button onClick={() => navigate('/')} className="w-full text-lg px-8 py-4">
           返回首页
         </Button>
+        <div className="mt-8 flex justify-center">
+          <ThemeSelect />
+        </div>
       </div>
     </div>
   )
